@@ -23,7 +23,7 @@ if(empty($requestData['NOME']) || empty($requestData['CELL'])){
                 ':b' => $requestData['CELL']
             ));
             $dados = array(
-                'tipo' => 'Winner',
+                'tipo' => 'success',
                 'mensagem' => "We are champions my friend"
             );
         }catch(PDOException $e){
@@ -44,7 +44,7 @@ if(empty($requestData['NOME']) || empty($requestData['CELL'])){
             ));
 
             $dados = array(
-                'tipo' => 'Winner',
+                'tipo' => 'success',
                 'mensagem' => "We are champions my friend"
             );
         }catch(PDOException $e){
