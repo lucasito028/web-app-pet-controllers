@@ -12,7 +12,7 @@ $(document).ready(function(){
             dataType: 'json',
             assync: true,
             data: dados,
-            url: 'src/tipo/model/save-tipo.php',
+            url: 'src/comprador/model/save.php',
             success: function(dados) {
                 Swal.fire({
                     title: 'Adicionar Tipo de atendende',
