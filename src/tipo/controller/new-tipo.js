@@ -8,7 +8,7 @@ $(document).ready(function(){
         $('.modal-body').empty()
 
 
-        $('.modal-title').append('adicionar tipo atendente')
+        $('.modal-title').append('Add novo tipo')
 
         $('.modal-body').load('src/tipo/view/form-tipo.html')
 

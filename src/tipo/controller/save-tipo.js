@@ -15,7 +15,7 @@ $(document).ready(function(){
             url: 'src/tipo/model/save-tipo.php',
             success: function(dados) {
                 Swal.fire({
-                    title: 'Sistema Para Gerenciamento de sorteios',
+                    title: 'Adicionar Tipo de atendende',
                     text: dados.mensagem,
                     icon: dados.tipo,
                     confirmButtonText: 'OK'

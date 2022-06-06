@@ -1,2 +1,1 @@
-# Sysrifa repositorio do sistema gerenciador de rifas online.
-parte 1
+# Rifa de Atividade

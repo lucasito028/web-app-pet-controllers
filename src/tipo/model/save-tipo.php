@@ -22,13 +22,13 @@ if(empty($requestData['NOME'])){
                 ':a' => $requestData['NOME']
             ));
             $dados = array(
-                'tipo' => 'success',
-                'mensagem' => "Registro salvo com sucesso"
+                'tipo' => 'Winner',
+                'mensagem' => "We are champions my friend"
             );
         }catch(PDOException $e){
             $dados = array(
                 'tipo' => 'error',
-                'mensagem' => "Erro ao tentar salvar o registro"
+                'mensagem' => "Deu pau ai, ta o ok"
             );
         }
         
@@ -42,13 +42,13 @@ if(empty($requestData['NOME'])){
             ));
 
             $dados = array(
-                'tipo' => 'error',
-                'mensagem' => 'Registro atualizado com sucesso'
+                'tipo' => 'Winner',
+                'mensagem' => "We are champions my friend"
             );
         }catch(PDOException $e){
             $dados = array(
                 'tipo' => 'error',
-                'mensagem' => 'Erro ao atualizar o registro'
+                'mensagem' => "Deu pau ai, ta o ok"
             );
         }
     }
