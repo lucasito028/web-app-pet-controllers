@@ -8,7 +8,7 @@ $(document).ready(function(){
             "type": "POST"
 
         },
-        "column": [{
+        "columns": [{
             "data" : 'ID',
             "classname": 'text-center'
         },

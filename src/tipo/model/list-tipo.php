@@ -4,7 +4,7 @@ include('../../conexao/conn.php');
 
 $requestData = $_REQUEST;
 
-$colunas = $requestData['colunas'];
+$colunas = $requestData['columns'];
 
 $sql = "SELECT ID, NOME FROM TIPO WHERE 1=1";
 
