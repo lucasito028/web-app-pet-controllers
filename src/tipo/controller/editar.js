@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $('#table-tipo').on('click', 'button.btn-view', function(e){
+    $('#table-tipo').on('click', 'button.btn-edit', function(e){
 
         e.preventDefault()
 
@@ -9,7 +9,7 @@ $(document).ready(function(){
         $('.modal-body').empty()
 
 
-        $('.modal-title').append('É pave ou pa cume?')
+        $('.modal-title').append('Editar ai ai')
 
         let ID = `ID=${$(this).attr('id')}`
 
@@ -23,9 +23,9 @@ $(document).ready(function(){
                 if(dado.tipo == 'success'){
                     $('.modal-body').load('src/tipo/view/form-tipo.html', function () {
                         $('#NOME').val(dado.dados.NOME)
-                        $('#NOME').attr('readonly', 'true')
+                        $('#ID').val(dado.dados.ID)
                     })
-                    $('.btn-salvar').hide()
+                    $('.btn-salvar').show()
                     $('#modal-tipo').modal('show')
                 }else{
                     Swal.fire({
@@ -35,6 +35,7 @@ $(document).ready(function(){
                         confirmButtonText: 'OK'
                     })
                 }
+                $('#table-tipo').DataTable().ajax.reload()
 
             }
         })

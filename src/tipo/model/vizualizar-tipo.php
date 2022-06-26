@@ -9,15 +9,15 @@ $sql = "SELECT * FROM TIPO WHERE ID = $ID";
 $resultado = $pdo->query($sql);
 
 if($resultado){
-    $dados = array();
+    $result = array();
 
     while($row = $resultado -> fetch(PDO::FETCH_ASSOC)){
-        $dados = array_map('utf8_encode', $row);
+        $result = array_map('utf8_encode', $row);
     }
     $dados = array(
         'tipo' => 'success',
         'mensagem' => '',
-        'dados' => $resultado
+        'dados' => $result
     );
 }
 else{
@@ -29,5 +29,6 @@ else{
 
 }
 
-echo json_encode($dados)
+echo json_encode($dados);
+
 ?>

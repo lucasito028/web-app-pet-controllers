@@ -28,7 +28,7 @@ if(empty($requestData['NOME'])){
         }catch(PDOException $e){
             $dados = array(
                 'tipo' => 'error',
-                'mensagem' => "Deu pau ai, ta o ok"
+                'mensagem' => "Deu pau na oral de cadastrar ai"
             );
         }
         
@@ -48,7 +48,7 @@ if(empty($requestData['NOME'])){
         }catch(PDOException $e){
             $dados = array(
                 'tipo' => 'error',
-                'mensagem' => "Deu pau ai, ta o ok"
+                'mensagem' => "Deu pau na oral de atualiuzar ai"
             );
         }
     }
