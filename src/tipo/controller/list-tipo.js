@@ -18,8 +18,8 @@ $(document).ready(function(){
         },
         {
             "data" : 'ID',
-            "classname": 'text-center',
             "orderable": false,
+            "classname": 'text-center',
             "searchable": false,
             "render": function(data, type, row, meta){
                 return `

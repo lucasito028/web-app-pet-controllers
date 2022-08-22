@@ -6,7 +6,7 @@ $requestData = $_REQUEST;
 
 $colunas = $requestData['columns'];
 
-$sql = "SELECT ID, NOME FROM TIPO WHERE 1=1";
+$sql = "SELECT ID, NOME FROM TIPO WHERE 1=1 ";
 
 
 $resultado = $pdo -> query($sql);
@@ -34,7 +34,7 @@ $direcao = $requestData['order'][0]['dir'];
 $inicio = $requestData['start'];
 $tamanho = $requestData['length'];
 
-$sql .= "ORDER BY $ordem $direcao LIMIT $inicio, $tamanho";
+$sql .= "ORDER BY $ordem $direcao LIMIT $inicio, $tamanho ";
 
 $resultado = $pdo -> query($sql);
 $dados = array();

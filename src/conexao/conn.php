@@ -1,8 +1,8 @@
 <?php
-$hostname = "sql209.epizy.com";	
-$database ="epiz_31448453_sysrifa";
-$user = "epiz_31448453";
-$password = "AGhCmIfXUfn";
+$hostname = "localhost:3307";	
+$database ="rifa_tb";
+$user = "root";
+$password = "usbw";
 
 try{
     $pdo = new PDO('mysql:host=' . $hostname .';dbname=' . $database, $user, $password);
