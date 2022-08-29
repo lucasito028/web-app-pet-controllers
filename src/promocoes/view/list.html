@@ -1,0 +1,70 @@
+<div class="row mt-5">
+    <div class="col-12 mt-5">
+        <div class="card shadow mt-5">
+            <div class="card-header">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                        <h4 class="text-dark">
+                            Gerenciar tipos de Promoções
+                        </h4>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button class="btn btn-dark btn-block btn-new">
+                            Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="table-promo">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col" class="text-center">ID</th>
+                                    <th scope="col" class="text-center">TITULO</th>
+                                    <th scope="col" class="text-center">DESCRICAO</th>
+                                    <th scope="col" class="text-center">DATA INICIO</th>
+                                    <th scope="col" class="text-center">DATA FIM</th>
+                                    <th scope="col" class="text-center">DATA SORTEIO</th>
+                                    <th scope="col" class="text-center">ARRECADACAO</th>
+                                    <th scope="col" class="text-center">AÇÕES</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="modal-tipo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="my-modal-title">Title</h5>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Content</p>
+            </div>
+            <div class="modal-footer">
+                <button id="close" class="btn btn-secondary cloose" data-dismiss="modal" aria-label="Close"><i class="mdi mdi-close-circle"></i>Fechar</button>
+                <button class="btn btn-success btn-salvar"><i class="mdi mdi-content-save"></i>Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="src/promocoes/controller/delete.js"></script>
+<script src="src/promocoes/controller/editar.js"></script>
+<script src="src/promocoes/controller/list.js"></script>
+<script src="src/promocoes/controller/new.js"></script>
+<script src="src/promocoes/controller/save.js"></script>
+<script src="src/promocoes/controller/vizualizar.js"></script>
