@@ -8,10 +8,11 @@ $(document).ready(function(){
 
         $('.modal-body').empty()
 
-
         $('.modal-title').append('Editar ai ai')
 
         let ID = `ID=${$(this).attr('id')}`
+
+
 
         $.ajax({
             type: 'POST',
@@ -27,6 +28,7 @@ $(document).ready(function(){
                     })
                     $('.btn-salvar').show()
                     $('#modal-tipo').modal('show')
+                    $('.btn-salvar').removeAttr('data-operation')
                 }else{
                     Swal.fire({
                         title: 'SysRifa',

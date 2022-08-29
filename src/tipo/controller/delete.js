@@ -13,7 +13,7 @@ $(document).ready(function(){
             showCancelButton: true,
             confirmButtonText: 'SS',
             cancelButtonText:'NN'
-        }).then((result) => {
+        }).then((result => {
             if(result.value){
                 $.ajax({
                     type: 'POST',
@@ -21,10 +21,10 @@ $(document).ready(function(){
                     assync: true,
                     data: ID,
                     url: 'src/tipo/model/delete-tipo.php',
-                    success: function(){
+                    success: function(dados){
                             Swal.fire({
                                 title: 'SysRifa',
-                                text: dados.messagem,
+                                text: dados.mensagem,
                                 icon: dados.tipo,
                                 confirmButtonText: 'OK'
                             })
@@ -33,7 +33,7 @@ $(document).ready(function(){
                     })  
         
                     }
-                })
+        }))
             
         })
     })

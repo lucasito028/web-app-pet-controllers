@@ -12,7 +12,6 @@ $(document).ready(function(){
 
         $('.modal-body').load('src/tipo/view/form-tipo.html')
 
-
         $('.btn-salvar').show()
         
         $('.btn-salvar').attr('data-operation', 'insert')

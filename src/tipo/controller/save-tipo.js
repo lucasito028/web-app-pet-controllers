@@ -22,7 +22,7 @@ $(document).ready(function(){
                 })
 
                 $('#modal-tipo').modal('hide')
-                $('#table-tipo').DataTable().reload();
+                $('#table-tipo').DataTable().ajax.reload();
 
             }
         })
