@@ -23,8 +23,15 @@ $(document).ready(function(){
             success: function(dado) {
                 if(dado.tipo == 'success'){
                     $('.modal-body').load('src/promocoes/view/form.html', function () {
-                        $('#NOME').val(dado.dados.NOME)
                         $('#ID').val(dado.dados.ID)
+                        $('#TITULO').val(dado.dados.TITULO)
+                        $('#DESC').val(dado.dados.DESCRICAO)
+                        $('#INICIO').val(dado.dados.DATA_INICIO)
+                        $('#FIM').val(dado.dados.DATA_FIM)
+                        $('#TITULO').val(dado.dados.DATA_SORTEIO)
+                        $('#DATA_SORTEIO').val(dado.dados.DATA_SORTEIO)
+                        $('#ARRECADACAO').val(dado.dados.ARRECADACAO)
+                        $('#VALOR_RIFA').val(dado.dados.VALOR_RIFA)
                     })
                     $('.btn-salvar').show()
                     $('#modal-tipo').modal('show')

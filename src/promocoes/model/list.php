@@ -18,6 +18,12 @@ if(!empty($filtro)){
 
     $sql .= " AND(ID LIKE '$filtro%' ";
     $sql .= " OR TITULO LIKE '$filtro%') ";
+    $sql .= " OR DESCRICAO LIKE '$filtro%') ";
+    $sql .= " OR DATA_INICIO LIKE '$filtro%') ";
+    $sql .= " OR DATA_FIM LIKE '$filtro%') ";
+    $sql .= " OR DATA_SORTEIO LIKE '$filtro%') ";
+    $sql .= " OR ARRECADACAO LIKE '$filtro%') ";
+    $sql .= " OR VALOR_RIFA LIKE '$filtro%') ";
 
 }
 
@@ -34,7 +40,7 @@ $direcao = $requestData['order'][0]['dir'];
 $inicio = $requestData['start'];
 $tamanho = $requestData['length'];
 
-$sql .= "ORDER BY $ordem $direcao LIMIT $inicio, $tamanho ";
+$sql .= " ORDER BY $ordem $direcao LIMIT $inicio, $tamanho ";
 
 $resultado = $pdo -> query($sql);
 $dados = array();

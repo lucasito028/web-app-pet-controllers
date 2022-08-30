@@ -18,12 +18,12 @@ $(document).ready(function(){
             dataType: 'json',
             assync: true,
             data: ID,
-            url: 'src/tipo/promocoes/vizualizar.php',
+            url: 'src/promocoes/model/vizualizar.php',
             success: function(dado) {
                 if(dado.tipo == 'success'){
                     $('.modal-body').load('src/promocoes/view/form.html', function () {
-                        $('#NOME').val(dado.dados.NOME)
-                        $('#NOME').attr('readonly', 'true')
+                        $('#TITULO').val(dado.dados.TITULO)
+                        $('#TITULO').attr('readonly', 'true')
                     })
                     $('.btn-salvar').hide()
                     $('#modal-tipo').modal('show')

@@ -8,7 +8,7 @@ $(document).ready(function(){
         $('.modal-body').empty()
 
 
-        $('.modal-title').append('Add novo tipo')
+        $('.modal-title').append('Adicionar Promoção')
 
         $('.modal-body').load('src/promocoes/view/form.html')
 

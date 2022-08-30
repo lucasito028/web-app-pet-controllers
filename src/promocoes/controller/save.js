@@ -4,7 +4,7 @@ $(document).ready(function(){
 
         e.preventDefault()
 
-        let dados = $('#form-tipo').serialize()
+        let dados = $('#form-promo').serialize()
         dados += `&operacao=${$('.btn-salvar').attr('data-operation')}`
 
         $.ajax({

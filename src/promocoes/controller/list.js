@@ -4,7 +4,7 @@ $(document).ready(function(){
         "processing":true,
         "serverSide":true,
         "ajax": {
-            "url": "src/tipo/promocoes/list.php",
+            "url": "src/promocoes/model/list.php",
             "type": "POST"
 
         },
@@ -26,6 +26,10 @@ $(document).ready(function(){
         },
         {
             "data": 'DATA_FIM',
+            "classname": 'text-center'
+        },
+        {
+            "data": 'DATA_SORTEIO',
             "classname": 'text-center'
         },
         {

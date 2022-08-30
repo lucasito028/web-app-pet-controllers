@@ -1,11 +1,40 @@
 <form id="form-promo">
+
     <div class="form-group">
-        <label>Nome</label>
+        <label>Titulo</label>
         <input type="text" name="TITULO" id="TITULO" class="form-control">
     </div>
+
     <div class="form-group">
         <label>Descriçãos</label>
-        <input type="text" name="DESC" id="DESC" class="form-control">
+            <textarea name="DESC" id="DESC" class="form-control" cols="30" rows="5">
+            </textarea>
     </div>
+
+    <div class="form-group">
+        <label>Data inicio</label>
+        <input type="date" name="DATA_INICIO" id="DATA_INICIO" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Data terminal</label>
+        <input type="date" name="DATA_FIM" id="FIM" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Data sorteio</label>
+        <input type="date" name="DATA_SORTEIO" id="DATA_SORTEIO" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Arrecadação</label>
+        <input type="text" name="ARRECADACAO" id="ARRECADACAO" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Valor da Rifa</label>
+        <input type="text" name="VALOR_RIFA" id="VALOR_RIFA" class="form-control">
+    </div>
+
     <input type="hidden" name="ID" id="ID" class="form-control">
 </form>
